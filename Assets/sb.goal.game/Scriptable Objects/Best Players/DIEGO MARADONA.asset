@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6fab48fede699740bec4c31d4c1c546, type: 3}
+  m_Name: DIEGO MARADONA
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 903d910fc497cd648a1b8c6b241109f9, type: 3}
+  title: DIEGO MARADONA
+  description: "Career highlight: Scoring the Goal of the Century en route to World
+    Cup glory in 1986. Mortals just shouldn\u2019t be able to do that."

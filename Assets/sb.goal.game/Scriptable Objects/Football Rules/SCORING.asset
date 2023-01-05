@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fcd5fad97d66e4b9632b5da3d4b491, type: 3}
+  m_Name: SCORING
+  m_EditorClassIdentifier: 
+  title: SCORING
+  description: "To score the ball must go into your opponent\u2019s goal. The whole
+    ball needs to be over the line for it to be a legitimate goal. A goal can be
+    scored with any part of the body apart from the hand or arm up to the shoulder.
+    The goal itself consists of a frame measuring 8 feet high and 8 yards wide."

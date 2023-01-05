@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6fab48fede699740bec4c31d4c1c546, type: 3}
+  m_Name: RONALDINHO
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 192ce882b489e554fab232d0e79d9ac8, type: 3}
+  title: RONALDINHO
+  description: "Career highlight: Winning the 2002 World Cup as part a formidable
+    trio with Ronaldo and Rivaldo dubbed by Brazilian commentator Galvao Bueno as
+    \u2018the three Rs\u2019."

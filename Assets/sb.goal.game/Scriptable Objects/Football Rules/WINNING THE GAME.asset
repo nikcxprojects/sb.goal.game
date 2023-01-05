@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fcd5fad97d66e4b9632b5da3d4b491, type: 3}
+  m_Name: WINNING THE GAME
+  m_EditorClassIdentifier: 
+  title: WINNING THE GAME
+  description: To win you have to score more goals than that of your opponents. If
+    the scores are level after 90 minutes then the game will end as a draw apart
+    from in cup games where the game can go to extra time and even a penalty shootout
+    to decide the winner. Players must use their feet to kick the ball and are prohibited
+    to use their hands apart from goalkeepers who can use any part of their body
+    within the 18 yard box (of which more can be found out in the next section).
