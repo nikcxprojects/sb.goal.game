@@ -1,15 +1,11 @@
 using UnityEngine.UI;
 using UnityEngine;
 
-public class GoldenBootsMenu : MonoBehaviour, IMenu
+public class GoldenBootsMenu : MonoBehaviour
 {
     [SerializeField] Button startBtn;
-    [SerializeField] Button equipmentBtn;
     [SerializeField] Button settingsBtn;
-
-    [Space(10)]
-    [SerializeField] Image currentBoots;
-    [SerializeField] Image currentBall;
+    [SerializeField] Button menuBtn;
 
     private void Start()
     {
@@ -18,35 +14,19 @@ public class GoldenBootsMenu : MonoBehaviour, IMenu
             UIManager.OpenWindow(Window.GBGame, gameObject);
         });
 
-        equipmentBtn.onClick.AddListener(() =>
-        {
-            UIManager.OpenWindow(Window.GBEquip);
-        });
-
         settingsBtn.onClick.AddListener(() =>
         {
             UIManager.OpenWindow(Window.Settings);
             Settings.UpdateOptions(true, true, false);
         });
 
-        UpdateMenuIcons();
+        menuBtn.onClick.AddListener(() =>
+        {
+            UIManager.OpenWindow(Window.Menu, gameObject);
+        });
 
         var landscapeTemplate = LandscapeUtility.GetLandscape(AppManager.CurrentGameType);
         var canvasRef = gameObject.SetLandscape(landscapeTemplate);
         canvasRef.overrideSorting = false;
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape) && !Settings.IsOpened && !AppManager.IsEquip)
-        {
-            UIManager.OpenWindow(Window.Menu, gameObject);
-        }
-    }
-
-    public void UpdateMenuIcons()
-    {
-        currentBoots.sprite = Resources.Load<Sprite>($"Boots/{PlayerPrefs.GetInt(Boots.BootsKey)}");
-        currentBall.sprite = Resources.Load<Sprite>($"Balls/{PlayerPrefs.GetInt(Balls.BallKey)}");
     }
 }

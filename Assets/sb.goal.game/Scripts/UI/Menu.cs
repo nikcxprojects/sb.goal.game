@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     {
         footballExpert.onClick.AddListener(() =>
         {
-            UIManager.OpenWindow(Window.GoldenBootsMenu, gameObject);
+            UIManager.OpenWindow(Window.FootballExpertMenu, gameObject);
             AppManager.CurrentGameType = GameType.GB;
         });
 

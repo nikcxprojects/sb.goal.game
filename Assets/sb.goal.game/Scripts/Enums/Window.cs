@@ -10,7 +10,7 @@ public class Window
     public static string GameOver { get => "Game Over"; }
     public static string FootballRules { get => "FOOTBALL RULES"; }
     public static string BestPlayers { get => "BEST PLAYERS"; }
-    public static string GoldenBootsMenu { get => "Golden Boots Menu"; }
+    public static string FootballExpertMenu { get => "Football Expert Menu"; }
     public static string BestPenaltyMenu { get => "Best Penalty Menu"; }
     public static string SpeedyMasterMenu { get => "Speedy Master Menu"; }
     public static string GBEquip { get => "GB EQUIP"; }
