@@ -11,7 +11,7 @@ public class Window
     public static string FootballRules { get => "FOOTBALL RULES"; }
     public static string BestPlayers { get => "BEST PLAYERS"; }
     public static string FootballExpertMenu { get => "Football Expert Menu"; }
-    public static string BestPenaltyMenu { get => "Best Penalty Menu"; }
+    public static string FlyBallMenu { get => "Fly Ball Menu"; }
     public static string SpeedyMasterMenu { get => "Speedy Master Menu"; }
     public static string GBEquip { get => "GB EQUIP"; }
     public static string BPEquip { get => "BP EQUIP"; }

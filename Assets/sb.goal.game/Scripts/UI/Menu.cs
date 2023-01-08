@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
 
         flyBall.onClick.AddListener(() =>
         {
-            UIManager.OpenWindow(Window.BestPenaltyMenu, gameObject);
+            UIManager.OpenWindow(Window.FlyBallMenu, gameObject);
             AppManager.CurrentGameType = GameType.BP;
         });
 
