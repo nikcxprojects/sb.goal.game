@@ -8,11 +8,6 @@ public class Settings : MonoBehaviour
     [SerializeField] Button backBtn;
     private static Transform options;
 
-    [Space(10)]
-    [SerializeField] Button bootsBtn;
-    [SerializeField] Button ballsBtn;
-    [SerializeField] Button shirtsBtn;
-
     private void OnEnable()
     {
         IsOpened = true;
@@ -30,66 +25,8 @@ public class Settings : MonoBehaviour
 
     private void Start()
     {
-        if (FindObjectOfType<Ball>() != null)
-        {
-            Ball.Sleep();
-        }
-
-        if (FindObjectOfType<BallPenalty>() != null)
-        {
-            BallPenalty.Sleep();
-        }
-
-        if (FindObjectOfType<BallPlayer>() != null)
-        {
-            BallPlayer.Sleep();
-        }
-
-        Enemy[] enemies = FindObjectsOfType<Enemy>();
-        foreach(Enemy e in enemies)
-        {
-            e.Sleep();
-        }
-
-        bootsBtn.onClick.AddListener(() =>
-        {
-            UIManager.OpenWindow(Window.Boots);
-        });
-
-        ballsBtn.onClick.AddListener(() =>
-        {
-            UIManager.OpenWindow(Window.Balls);
-        });
-
-        shirtsBtn.onClick.AddListener(() =>
-        {
-            UIManager.OpenWindow(Window.Shirts);
-        });
-
         backBtn.onClick.AddListener(() =>
         {
-            if (FindObjectOfType<Ball>() != null)
-            {
-                Ball.WakeUp();
-                BootPlayer.UpdateRender();
-            }
-
-            if (FindObjectOfType<BallPenalty>() != null)
-            {
-                BallPenalty.WakeUp();
-            }
-
-            if (FindObjectOfType<BallPlayer>() != null)
-            {
-                BallPlayer.WakeUp();
-            }
-
-            Enemy[] enemies = FindObjectsOfType<Enemy>();
-            foreach (Enemy e in enemies)
-            {
-                e.WakeUp();
-            }
-
             Destroy(gameObject);
         });
     }
