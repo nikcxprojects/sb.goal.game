@@ -17,7 +17,6 @@ public class SpeedyMasterMenu : MonoBehaviour
         settingsBtn.onClick.AddListener(() =>
         {
             UIManager.OpenWindow(Window.Settings);
-            Settings.UpdateOptions(false, true, true);
         });
 
         menuBtn.onClick.AddListener(() =>

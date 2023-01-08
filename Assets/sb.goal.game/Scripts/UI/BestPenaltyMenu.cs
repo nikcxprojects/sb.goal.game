@@ -17,7 +17,6 @@ public class BestPenaltyMenu : MonoBehaviour
         settingsBtn.onClick.AddListener(() =>
         {
             UIManager.OpenWindow(Window.Settings);
-            Settings.UpdateOptions(false, true, false);
         });
 
         menuBtn.onClick.AddListener(() =>
