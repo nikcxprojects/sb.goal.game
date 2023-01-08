@@ -4,8 +4,8 @@ using UnityEngine;
 public class SpeedyMasterMenu : MonoBehaviour
 {
     [SerializeField] Button startBtn;
-    [SerializeField] Button equipmentBtn;
     [SerializeField] Button settingsBtn;
+    [SerializeField] Button menuBtn;
 
     private void Start()
     {
@@ -14,27 +14,19 @@ public class SpeedyMasterMenu : MonoBehaviour
             UIManager.OpenWindow(Window.SMGame, gameObject);
         });
 
-        equipmentBtn.onClick.AddListener(() =>
-        {
-            UIManager.OpenWindow(Window.SMEquip);
-        });
-
         settingsBtn.onClick.AddListener(() =>
         {
             UIManager.OpenWindow(Window.Settings);
             Settings.UpdateOptions(false, true, true);
         });
 
+        menuBtn.onClick.AddListener(() =>
+        {
+            UIManager.OpenWindow(Window.Menu, gameObject);
+        });
+
         var landscapeTemplate = LandscapeUtility.GetLandscape(AppManager.CurrentGameType);
         var canvasRef = gameObject.SetLandscape(landscapeTemplate);
         canvasRef.overrideSorting = false;
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape) && !Settings.IsOpened && !AppManager.IsEquip)
-        {
-            UIManager.OpenWindow(Window.Menu, gameObject);
-        }
     }
 }
