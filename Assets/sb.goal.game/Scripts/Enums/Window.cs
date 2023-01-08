@@ -11,7 +11,4 @@ public class Window
     public static string FootballExpertMenu { get => "Football Expert Menu"; }
     public static string FlyBallMenu { get => "Fly Ball Menu"; }
     public static string SpeedyMasterMenu { get => "Speedy Master Menu"; }
-    public static string Boots { get => "Boots"; }
-    public static string Balls { get => "Balls"; }
-    public static string Shirts { get => "Shirts"; }
 }
