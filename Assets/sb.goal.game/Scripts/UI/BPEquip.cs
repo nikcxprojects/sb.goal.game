@@ -35,8 +35,6 @@ public class BPEquip : MonoBehaviour
 
                 PlayerPrefs.SetInt(Balls.BallKey, ball.GetSiblingIndex());
                 PlayerPrefs.Save();
-
-                FindObjectsOfType<MonoBehaviour>().OfType<IMenu>().FirstOrDefault()?.UpdateMenuIcons();
             });
         }
 

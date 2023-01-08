@@ -29,8 +29,6 @@ public class Balls : MonoBehaviour
 
                 PlayerPrefs.SetInt(BallKey, ball.GetSiblingIndex());
                 PlayerPrefs.Save();
-
-                FindObjectsOfType<MonoBehaviour>().OfType<IMenu>().FirstOrDefault()?.UpdateMenuIcons();
             });
         }
     }

@@ -37,8 +37,6 @@ public class GBEquip : MonoBehaviour
 
                 PlayerPrefs.SetInt(Boots.BootsKey, boot.GetSiblingIndex());
                 PlayerPrefs.Save();
-
-                FindObjectsOfType<MonoBehaviour>().OfType<IMenu>().FirstOrDefault().UpdateMenuIcons();
             });
         }
 
@@ -52,8 +50,6 @@ public class GBEquip : MonoBehaviour
 
                 PlayerPrefs.SetInt(Balls.BallKey, ball.GetSiblingIndex());
                 PlayerPrefs.Save();
-
-                FindObjectsOfType<MonoBehaviour>().OfType<IMenu>().FirstOrDefault().UpdateMenuIcons();
             });
         }
 

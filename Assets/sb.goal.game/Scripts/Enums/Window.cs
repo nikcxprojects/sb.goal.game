@@ -8,14 +8,9 @@ public class Window
     public static string SMGame { get => "SMGame"; }
     public static string Pause { get => "Pause"; }
     public static string GameOver { get => "Game Over"; }
-    public static string FootballRules { get => "FOOTBALL RULES"; }
-    public static string BestPlayers { get => "BEST PLAYERS"; }
     public static string FootballExpertMenu { get => "Football Expert Menu"; }
     public static string FlyBallMenu { get => "Fly Ball Menu"; }
     public static string SpeedyMasterMenu { get => "Speedy Master Menu"; }
-    public static string GBEquip { get => "GB EQUIP"; }
-    public static string BPEquip { get => "BP EQUIP"; }
-    public static string SMEquip { get => "SM EQUIP"; }
     public static string Boots { get => "Boots"; }
     public static string Balls { get => "Balls"; }
     public static string Shirts { get => "Shirts"; }
