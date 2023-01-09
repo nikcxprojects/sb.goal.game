@@ -76,3 +76,52 @@ MonoBehaviour:
     c: CROATIA
     d: POLAND
     ansverId: 2
+  - question: THIAGO SILVA
+    icon: {fileID: 21300000, guid: cf274e5f321a88a4ca01adb1806338d7, type: 3}
+    a: BRAZIL
+    b: SENEGAL
+    c: USA
+    d: TUNISIA
+    ansverId: 0
+  - question: JULIAN ALVAREZ
+    icon: {fileID: 21300000, guid: d05a734959530f04389eb88eb75d8915, type: 3}
+    a: AUSTRIA
+    b: ARGENTINA
+    c: CANADA
+    d: HUNGARY
+    ansverId: 1
+  - question: VINCENT ABOUBAKAR
+    icon: {fileID: 21300000, guid: a22be84f805f1694292683b77a0f2978, type: 3}
+    a: KUWAIT
+    b: BOLIVIA
+    c: CAMEROON
+    d: CHILE
+    ansverId: 2
+  - question: MARCUS RASHFORD
+    icon: {fileID: 21300000, guid: 5e5a2befb952b3b4b94919ca2d96f663, type: 3}
+    a: SINGAPORE
+    b: MALI
+    c: JAMAICA
+    d: ENGLAND
+    ansverId: 3
+  - question: JOAO FELIX
+    icon: {fileID: 21300000, guid: 0d56f438e55ef5e4a91f7901e47e3286, type: 3}
+    a: PORTUGAL
+    b: SERBIA
+    c: SWEDEN
+    d: WALES
+    ansverId: 0
+  - question: RICHARLISON
+    icon: {fileID: 21300000, guid: fcb737a4c81f8ca4daa4b4e3b3a6a6e1, type: 3}
+    a: TURKIYE
+    b: BRAZIL
+    c: SPAIN
+    d: SUDAN
+    ansverId: 1
+  - question: HIRVING LOZANO
+    icon: {fileID: 21300000, guid: fcb737a4c81f8ca4daa4b4e3b3a6a6e1, type: 3}
+    a: SCOTLAND
+    b: MEXICO
+    c: YEMEN
+    d: ITALY
+    ansverId: 1
