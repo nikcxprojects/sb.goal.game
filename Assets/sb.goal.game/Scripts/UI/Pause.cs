@@ -7,10 +7,6 @@ public class Pause : MonoBehaviour
 
     private void OnEnable()
     {
-        var landscapeTemplate = LandscapeUtility.GetLandscape(AppManager.CurrentGameType);
-        var canvasRef = gameObject.SetLandscape(landscapeTemplate);
-        canvasRef.overrideSorting = false;
-
         AppManager.IsPause = true;
     }
 
