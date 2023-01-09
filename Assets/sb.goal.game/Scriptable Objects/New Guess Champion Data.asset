@@ -41,3 +41,80 @@ MonoBehaviour:
     c: USA
     d: TUNISIA
     ansverId: 1
+  - year: 1982
+    hostCountry: SPAIN
+    a: SCOTLAND
+    b: MEXICO
+    c: GERMANY
+    d: ITALY
+    ansverId: 3
+  - year: 2014
+    hostCountry: BRAZIL
+    a: GERMANY
+    b: URUGUAY
+    c: SYRIA
+    d: SPAIN
+    ansverId: 0
+  - year: 1974
+    hostCountry: GERMANY
+    a: MEXICO
+    b: GERMANY
+    c: PORTUGAL
+    d: FRANCE
+    ansverId: 1
+  - year: 1962
+    hostCountry: CHILE
+    a: ARGENTINA
+    b: BRAZIL
+    c: CROATIA
+    d: POLAND
+    ansverId: 1
+  - year: 1970
+    hostCountry: MEXICO
+    a: AUSTRIA
+    b: BRAZIL
+    c: CANADA
+    d: HUNGARY
+    ansverId: 1
+  - year: 1998
+    hostCountry: FRANCE
+    a: TURKIYE
+    b: ITALY
+    c: SPAIN
+    d: FRANCE
+    ansverId: 3
+  - year: 1930
+    hostCountry: URUGUAY
+    a: GERMANY
+    b: URUGUAY
+    c: SYRIA
+    d: SPAIN
+    ansverId: 1
+  - year: 2006
+    hostCountry: GERMANY
+    a: ITALY
+    b: GERMANY
+    c: PORTUGAL
+    d: FRANCE
+    ansverId: 0
+  - year: 1934
+    hostCountry: ITALY
+    a: BRAZIL
+    b: URUGUAY
+    c: USA
+    d: ITALY
+    ansverId: 3
+  - year: 2002
+    hostCountry: KOREA, JAPAN
+    a: AUSTRIA
+    b: BRAZIL
+    c: CANADA
+    d: ITALY
+    ansverId: 1
+  - year: 1938
+    hostCountry: FRANCE
+    a: ARGENTINA
+    b: FRANCE
+    c: CROATIA
+    d: POLAND
+    ansverId: 1
