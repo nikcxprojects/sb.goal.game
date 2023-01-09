@@ -4,8 +4,6 @@ public class AppManager : MonoBehaviour
 {
     public static string CurrentGameType { get; set; }
 
-    public static bool IsEquip { get; set; }
-
     public static bool IsPause { get; set; }
 
     private void Awake()

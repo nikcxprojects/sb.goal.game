@@ -9,11 +9,13 @@ public class Settings : MonoBehaviour
     private void OnEnable()
     {
         IsOpened = true;
+        Time.timeScale = 0;
     }
 
     private void OnDestroy()
     {
         IsOpened = false;
+        Time.timeScale = 1;
     }
 
     private void Start()

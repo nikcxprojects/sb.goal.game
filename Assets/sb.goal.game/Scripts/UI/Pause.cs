@@ -8,11 +8,13 @@ public class Pause : MonoBehaviour
     private void OnEnable()
     {
         AppManager.IsPause = true;
+        Time.timeScale = 0;
     }
 
     private void OnDestroy()
     {
         AppManager.IsPause = false;
+        Time.timeScale = 1;
     }
 
     private void Start()
