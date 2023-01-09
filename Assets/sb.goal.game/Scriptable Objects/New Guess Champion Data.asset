@@ -13,10 +13,31 @@ MonoBehaviour:
   m_Name: New Guess Champion Data
   m_EditorClassIdentifier: 
   questionDatas:
-  - year: 
-    hostCountry: 
-    a: 
-    b: 
-    c: 
-    d: 
+  - year: 1990
+    hostCountry: ITALY
+    a: FRANCE
+    b: SPAIN
+    c: GERMANY
+    d: QATAR
+    ansverId: 2
+  - year: 2010
+    hostCountry: SOUTH AFRICA
+    a: LATVIA
+    b: PORTUGAL
+    c: ROMANIA
+    d: SPAIN
+    ansverId: 3
+  - year: 1966
+    hostCountry: ENGLAND
+    a: ENGLAND
+    b: SLOVENIA
+    c: SERBIA
+    d: PANAMA
     ansverId: 0
+  - year: 1950
+    hostCountry: BRAZIL
+    a: BRAZIL
+    b: URUGUAY
+    c: USA
+    d: TUNISIA
+    ansverId: 1

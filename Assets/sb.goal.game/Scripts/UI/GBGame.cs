@@ -24,6 +24,7 @@ public class GBGame : MonoBehaviour
     private void OnEnable()
     {
         id = 0;
+        UpdateQuestion();
     }
 
     private void Awake()

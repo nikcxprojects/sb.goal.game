@@ -24,6 +24,7 @@ public class SMGame : MonoBehaviour
     private void OnEnable()
     {
         id = 0;
+        UpdateQuestion();
     }
 
     private void Awake()
