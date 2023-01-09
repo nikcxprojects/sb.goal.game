@@ -441,6 +441,10 @@ MonoBehaviour:
   pauseBtn: {fileID: 2483237301406874403}
   settingsBtn: {fileID: 2483237301917627268}
   scoreText: {fileID: 2483237302285350734}
+  questionText: {fileID: 5491965994142547789}
+  iconImage: {fileID: 7343880325978774755}
+  ansvers: {fileID: 7341350406508683752}
+  data: {fileID: 11400000, guid: 3cb31025c86fd594bb26e3430e68f4c3, type: 2}
 --- !u!1 &2483237301406874401
 GameObject:
   m_ObjectHideFlags: 0
