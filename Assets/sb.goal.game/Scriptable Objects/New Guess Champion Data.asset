@@ -118,3 +118,38 @@ MonoBehaviour:
     c: CROATIA
     d: POLAND
     ansverId: 1
+  - year: 1994
+    hostCountry: USA
+    a: BRAZIL
+    b: GERMANY
+    c: PORTUGAL
+    d: FRANCE
+    ansverId: 0
+  - year: 1954
+    hostCountry: SWITZERLAND
+    a: LATVIA
+    b: PORTUGAL
+    c: GERMANY
+    d: SPAIN
+    ansverId: 2
+  - year: 1986
+    hostCountry: MEXICO
+    a: ARGENTINA
+    b: BRAZIL
+    c: CROATIA
+    d: SPAIN
+    ansverId: 0
+  - year: 1958
+    hostCountry: SWEDEN
+    a: ITALY
+    b: BRAZIL
+    c: SWEDEN
+    d: SPAIN
+    ansverId: 1
+  - year: 1978
+    hostCountry: ARGENTINA
+    a: ARGENTINA
+    b: USA
+    c: CANADA
+    d: ITALY
+    ansverId: 0
