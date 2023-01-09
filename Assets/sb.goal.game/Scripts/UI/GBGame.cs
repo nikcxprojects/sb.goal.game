@@ -36,7 +36,18 @@ public class GBGame : MonoBehaviour
                 int ansverId = data.questionDatas[id].ansverId;
 
                 bool IsTrue = selectId == ansverId;
-                Debug.Log(IsTrue);
+                if(IsTrue)
+                {
+                    if (Switcher.VibraEnabled)
+                    {
+                        Handheld.Vibrate();
+                    }
+
+                    scoreText.text = $"{++score}";
+
+                    ScoreUtility.CurrentScore = score;
+                    ScoreUtility.BestScore = score;
+                }
 
                 id++;
                 if(id > data.questionDatas.Length - 1)
