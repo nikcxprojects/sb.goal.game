@@ -23,7 +23,7 @@ public class HealthContainer : MonoBehaviour
             return true;
         }
 
-        transform.GetChild(Count).GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
+        transform.GetChild(Count).GetComponent<Image>().sprite = empty;
         return false;
     }
 
@@ -32,7 +32,7 @@ public class HealthContainer : MonoBehaviour
         Count = transform.childCount;
         for (int i = transform.childCount - 1; i > 0; i--)
         {
-            transform.GetChild(i).GetComponent<Image>().color = Color.white;
+            transform.GetChild(i).GetComponent<Image>().sprite = fill;
         }
     }
 }
