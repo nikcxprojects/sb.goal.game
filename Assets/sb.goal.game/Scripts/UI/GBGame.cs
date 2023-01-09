@@ -18,6 +18,7 @@ public class GBGame : MonoBehaviour
     [SerializeField] Transform ansvers;
 
     [Space(10)]
+    [SerializeField] HealthContainer healthContainer;
     [SerializeField] FootballExpertData data;
 
     private void OnEnable()
@@ -32,21 +33,30 @@ public class GBGame : MonoBehaviour
             Button ansver = t.GetComponent<Button>();
             ansver.onClick.AddListener(() =>
             {
+                if (Switcher.VibraEnabled)
+                {
+                    Handheld.Vibrate();
+                }
+
                 int selectId = t.GetSiblingIndex();
                 int ansverId = data.questionDatas[id].ansverId;
 
                 bool IsTrue = selectId == ansverId;
                 if(IsTrue)
                 {
-                    if (Switcher.VibraEnabled)
-                    {
-                        Handheld.Vibrate();
-                    }
-
                     scoreText.text = $"{++score}";
 
                     ScoreUtility.CurrentScore = score;
                     ScoreUtility.BestScore = score;
+                }
+                else
+                {
+                    bool IsGameEnd = healthContainer.TakeDamage();
+                    if(IsGameEnd)
+                    {
+                        UIManager.OpenWindow(Window.GameOver, gameObject);
+                        return;
+                    }
                 }
 
                 id++;

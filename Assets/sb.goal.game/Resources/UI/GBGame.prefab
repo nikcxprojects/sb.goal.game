@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 3179006147853556250}
   - component: {fileID: 3746071162862236327}
   - component: {fileID: 7902979386931781091}
+  - component: {fileID: 5090239282460362294}
   m_Layer: 0
   m_Name: health
   m_TagString: Untagged
@@ -309,6 +310,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &5090239282460362294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061840938979274463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8a1b79e582db748803defa6e058c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fill: {fileID: 21300000, guid: 414f9f8810653eb408ee70da243601e1, type: 3}
+  empty: {fileID: 21300000, guid: e931ed4f414d5ff42af8b7baa825f12b, type: 3}
 --- !u!1 &2406811663740137618
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +459,7 @@ MonoBehaviour:
   questionText: {fileID: 5491965994142547789}
   iconImage: {fileID: 7343880325978774755}
   ansvers: {fileID: 7341350406508683752}
+  healthContainer: {fileID: 5090239282460362294}
   data: {fileID: 11400000, guid: 3cb31025c86fd594bb26e3430e68f4c3, type: 2}
 --- !u!1 &2483237301406874401
 GameObject:
