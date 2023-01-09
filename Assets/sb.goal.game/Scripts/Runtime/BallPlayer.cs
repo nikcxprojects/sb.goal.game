@@ -40,5 +40,8 @@ public class BallPlayer : MonoBehaviour
     {
         Rigidbody.velocity = Vector2.zero;
         Rigidbody.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+
+        Rigidbody.angularVelocity = 0;
+        Rigidbody.AddTorque(10);
     }
 }

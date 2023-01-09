@@ -63,7 +63,7 @@ public class Switcher : MonoBehaviour
                 return;
             }
 
-            StartCoroutine(nameof(Switch));
+            Switch();
         });
 
         if (targetSource)
@@ -91,7 +91,7 @@ public class Switcher : MonoBehaviour
         return string.Equals(targetSourceName, "vibration");
     }
 
-    private IEnumerator Switch()
+    private void Switch()
     {
         Enable = !Enable;
 
@@ -115,15 +115,43 @@ public class Switcher : MonoBehaviour
         Vector2 v2Current = Handler.transform.localPosition;
         Vector2 v2Target = new Vector2(xTarget, v2Current.y);
 
-        while(et < swithDuration)
-        {
-            Handler.transform.localPosition = Vector2.Lerp(v2Current, v2Target, et / swithDuration);
-
-            et += Time.deltaTime;
-            yield return null;
-        }
-
         Handler.transform.localPosition = v2Target;
         et = 0;
     }
+
+    //private IEnumerator Switch()
+    //{
+    //    Enable = !Enable;
+
+    //    PlayerPrefs.SetInt(targetSourceName, Enable ? 1 : 0);
+    //    PlayerPrefs.Save();
+
+    //    if (targetSource)
+    //    {
+    //        targetSource.mute = !Enable;
+    //    }
+    //    else
+    //    {
+    //        VibraEnabled = Enable;
+    //    }
+
+    //    Image.color = Enable ? activeColorSwithcer : disableColorSwithcer;
+    //    Handler.color = Enable ? activeColorHandler : disableColorHandler;
+
+    //    float xTarget = Enable ? xMax : xMin;
+
+    //    Vector2 v2Current = Handler.transform.localPosition;
+    //    Vector2 v2Target = new Vector2(xTarget, v2Current.y);
+
+    //    while(et < swithDuration)
+    //    {
+    //        Handler.transform.localPosition = Vector2.Lerp(v2Current, v2Target, et / swithDuration);
+
+    //        et += Time.deltaTime;
+    //        yield return null;
+    //    }
+
+    //    Handler.transform.localPosition = v2Target;
+    //    et = 0;
+    //}
 }
